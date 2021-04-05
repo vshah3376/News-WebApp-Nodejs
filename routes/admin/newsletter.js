@@ -25,7 +25,7 @@ router.use(session({
     resave: true,
     saveUninitialized: false,
     store: new MongoStore({
-        url: 'DBurl',
+        url: 'mongodb://127.0.0.1:27017/magazine',
     })
 }));
 

@@ -2,14 +2,16 @@ aside.col-lg-4
         // popular posts
         section
           .sidebar-label
-            h5 Popular posts
+            h5 Popular posts  
           each popularVal, i in popular
+            //- h3= `${popularVal.article_id}`  
             each artVal, i in articles
               
               if popularVal.article_id == artVal._id
+                //- h3= `${artVal._id}`
                 a(href=`/article/${artVal.num}`)
                   .article-horizontal.img-blur
-                    img(src=`/uploads/${artVal.image}` alt='image')
+                    img(src=`${artVal.image}` alt='image')
                     h5= `${artVal.title.substring(0, 60)}...`
                       p= `${new Date(artVal.date).getDate()}, ${new Date(artVal.date).getMonth()+1}, ${new Date(artVal.date).getFullYear()} `
                         span.fa.fa-clock
@@ -53,9 +55,9 @@ aside.col-lg-4
                 
                 
         // Ads
-        section
-          .sidebar-ads
-            img.img-fluid(src='/images/ads.PNG' alt='ads image')
+        //- section
+        //-   .sidebar-ads
+        //-     img.img-fluid(src='/images/ads.PNG' alt='any image')
         // Newsletter
         section
           each val, i in newsletter
@@ -67,6 +69,6 @@ aside.col-lg-4
                 input(type='email' name='email' required='' placeholder='Your email address')
                 button.btn.bg-white(onclick='obj.newsletterSub()') Subscribe
         // Ads
-        section
-          .sidebar-ads
-            img.img-fluid(src='/images/ads.PNG' alt='ads image')
+        //- section
+        //-   .sidebar-ads
+        //-     img.img-fluid(src='/images/ads.PNG' alt='any image')

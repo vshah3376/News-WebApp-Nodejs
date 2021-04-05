@@ -22,7 +22,7 @@ body {
     
 }
 .header img {
-    max-height: 100px;
+    max-height: 80px;
 }
  
 .break-news {
@@ -56,13 +56,13 @@ body {
 }
 
 nav {
-    background-color: #564256;
+    background-color: #564556;
     margin-bottom: 20px;
-    height: 64px;
-    
+    height: 60px;
+
 }
 nav div div > ul {
-    padding: 0px;
+    padding: 10px;
     margin: 0px;
 }
 
@@ -74,8 +74,10 @@ nav div div >  ul > li {
 
 nav div div > ul > li > a, nav div div > ul > li > span {
     display: block;
-    padding: 20px 30px;
+    padding: 10px 18px;
     clear: both;
+     
+    /* background-color: #000000; */
     color: white;
     text-align: center;
     cursor: pointer;
@@ -86,7 +88,11 @@ nav div div  ul > li > a:hover, nav div div  ul > li > span:hover {
     text-decoration: none;
     background-color: #FC814A;
     color: white;
+    /* margin-top: 0;
+    padding-top: 0%; */
+    /* height: 50px; */
     transition: 0.1s;
+
 }
 
 .subcat {

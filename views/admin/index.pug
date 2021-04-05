@@ -94,13 +94,14 @@ script.
   data: {
   labels: !{JSON.stringify(dayName.reverse())},
   datasets: [{
-  label: 'Avarage article visits in this week',
+  label: 'Average article visits in this week',
   backgroundColor: '#c82f59',
   borderColor: 'rgb(255, 99, 132)',
   data: !{JSON.stringify(arrayAvarage.reverse())}
   }]
   }
   });
+  console.log(chart);
   var ctx = document.getElementById('categoryChart').getContext('2d');
   var chart = new Chart(ctx, {
   type: 'doughnut',

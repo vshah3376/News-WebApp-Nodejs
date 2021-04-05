@@ -14,7 +14,7 @@ const webpush = require('web-push');
 
 const publicVapidKey = "BHgGAd6jeeY7fPVqyTn5cnB-tGaNrJSpU5hgY1D-urC01IFLT-gnoktdsvhPeeeBb_7WoDKQHouRr6zXqefprXE";
 const privateVapidKey  = "wwbat6OsBT4ezfKhhsPdO9sXAkhzp7jrUTLfMoXQQ-8";
-webpush.setVapidDetails('mailto:kamolajani1@gmail.com', publicVapidKey, privateVapidKey);
+webpush.setVapidDetails('mailto:vshah3376@gmail.com', publicVapidKey, privateVapidKey);
 
 fs.writeFileSync(path.join(__dirname, '/public/publickey.txt'), publicVapidKey);
 

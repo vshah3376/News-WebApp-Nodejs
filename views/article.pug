@@ -13,7 +13,7 @@ include ./header.pug
                     span.fa.fa-clock
                 p
                     span.fa.fa-eye= ` ${articleQuery[0].views} `
-            img.img-fluid.img-thumbnail(src=`/uploads/${articleQuery[0].image}` alt='image')
+            img.img-fluid.img-thumbnail(src=`${articleQuery[0].image}` alt='image')
 
             span!= articleQuery[0].content
 

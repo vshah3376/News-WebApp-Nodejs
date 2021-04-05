@@ -23,7 +23,7 @@ Fully managed Admin Panel (Add, Edit and Delete everything from Database)
 Advanced Admin Panel dashboard  
 
 
-## Project directory structure
+<!-- ## Project directory structure
 
 ```
 |-- .gitignore  
@@ -121,7 +121,7 @@ Advanced Admin Panel dashboard
 --------|-- slideshow.pug  
 --------|-- subcategories.pug  
 --------|-- videos.pug  
-```
+``` -->
 
 ### Getting Started
 
@@ -161,7 +161,7 @@ Use a cloud server. Example: Heroku
 Change the db url in /models/db.js to your own db url connection  
 
 ```  
-await mongoose.connect('<DBurl>', { useNewUrlParser: true, useUnifiedTopology: true });  
+await mongoose.connect('<mongodb://127.0.0.1:27017/magazine>', { useNewUrlParser: true, useUnifiedTopology: true });  
 ```  
 Change all the session store url values to your DB url connection in all pages at directory /admin/*
 ```
@@ -170,7 +170,7 @@ router.use(session({
     resave: true,
     saveUninitialized: false,
     store: new MongoStore({
-        url: 'DBurl',
+        url: 'mongodb://127.0.0.1:27017/magazine',
     })
 }));
 ```
@@ -186,10 +186,5 @@ Change email verifier module API key to your own at path /routes/newsletter.js, 
 let verifier = new Verifier("<YourKey>");
 ```
 
-## Author
-[Kamyar Lajani](https://www.instagram.com/kamyar_lajani/)
 
-### Live Demo
-
-[Demo](https://magazine-news.herokuapp.com)
 

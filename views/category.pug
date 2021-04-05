@@ -10,7 +10,7 @@ include ./header.pug
                         .col-lg-6.post-result
                             a(href= `/article/${val.num}`)
                                 h5= val.title
-                                img(src= `/uploads/${val.image}` alt='image')
+                                img(src= `${val.image}` alt='image')
                                 p= `${val.content.substring(0, 100)}...`
                                 button.btn.btn-sm Read More
                                 div
@@ -23,7 +23,7 @@ include ./header.pug
                         .col-lg-6.post-result
                             a(href= `/article/${val.num}`)
                                 h5= val.title
-                                img(src= `/uploads/${val.image}` alt='image')
+                                img(src= `${val.image}` alt='image')
                                 p= `${val.content}...`
                                 button.btn.btn-sm Read More
                                 div

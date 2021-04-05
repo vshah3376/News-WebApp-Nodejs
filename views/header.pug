@@ -42,7 +42,7 @@ head
         meta(property='og:type' content='article')
         meta(property='og:title' content= `${article.title}`)
         meta(property='og:description' content= `${article.content.substring(0, 100)}...`)
-        meta(property='og:image' content= `${url}/uploads/${article.image}`)
+        meta(property='og:image' content= `${url}${article.image}`)
 
   else 
     title= path
@@ -72,14 +72,14 @@ head
         a(href="/")
           img.img-fluid(src= `/images/${info[0].image}` alt='logo')
       .col-8
-        img.img-fluid.float-right(src='/images/banner.png' alt='banner')
+        img.img-fluid.float-right(src='/images/banner.png' alt='')
     .row.break-news
       .col-md
         h6
           span.fa.fa-bolt
           |  Breaking news:
         each breakVal in breaknews
-            span.m-0.news= breakVal.title
+            span.m-0.news= breakVal.title 
   .menu
     span.fa.fa-bars.menu-open(onclick='obj.menu()')
     span.fa.fa-times.menu-close(onclick='obj.menu()')
@@ -97,15 +97,15 @@ head
                 - subcat = 1
                 
             if subcat == 1
-              li
-                span(onclick="obj.subCategory(this)")= ` ${val.name} ` 
-                  span.fa.fa-sort-down
-                .subcat
-                  ul
-                    each subCat in subCategory
-                      if val._id == subCat.category_id
-                        li
-                          a(href=`/cat/${subCat.name}`)= subCat.name
+              //- li
+              //-   span(onclick="obj.subCategory(this)")= ` ${val.name} ` 
+              //-     span.fa.fa-sort-down
+              //-   .subcat
+              //-     ul
+              //-       each subCat in subCategory
+              //-         if val._id == subCat.category_id
+              //-           li
+              //-             a(href=`/cat/${subCat.name}`)= subCat.name
 
             else 
               li

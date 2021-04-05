@@ -14,7 +14,7 @@ router.post('/newsletter', (req, res)=>{
             
             let message= await Newsletter.find({}).limit(1);
             
-            let verifier = new Verifier("at_Nx6Irkhhm4CWSEXp1UxIeibMFG5nE");
+            let verifier = new Verifier("at_Gb0kKHGd5v1GkEH9ZDY3ul9S4loWb");
                 verifier.verify(req.body.email, (err, data) => {
                     if (err) {
                         res.status(201).json({success: false, message: 'Email address is not valid or available'});

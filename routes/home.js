@@ -126,7 +126,7 @@ router.post('/ContactUs', [check('email').isEmail()], (req, res)=>{
                     
                 }
                 else {
-                    const secretKey = '<SecretKey>';
+                    const secretKey = '6LcJXpoaAAAAAOh2giTd1KvWJWj8rlo_XcD48eoW';
                     const verifyUrl = `https://google.com/recaptcha/api/siteverify?secret=${secretKey}&response=${req.body.captcha}&remoteapi=${req.connection.remoteAddress}`;
                         request(verifyUrl, (error, response, datas)=>{
                             let parsed = JSON.parse(datas)

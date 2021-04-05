@@ -17,9 +17,9 @@ include ./header.pug
                           p.category-label= subcat.name
                       if articleVal.category_id == catVal._id
                           p.category-label= catVal.name
-                    img.img-thumbnail(src= `/uploads/${articleVal.image}` alt='image')
+                    img.img-thumbnail(src= `${articleVal.image}` alt=`${articleVal.image}`)
                     h5= `${articleVal.title.substring(0, 60)}...`
-                      p= `${new Date(articleVal.date).getDate()}, ${new Date(articleVal.date).getMonth()+1}, ${new Date(articleVal.date).getFullYear()} `
+                      p= `${new Date(articleVal.date).getDate()},${new Date(articleVal.date).getMonth()+1},${new Date(articleVal.date).getFullYear()} `
                         span.fa.fa-clock
       .col-md-4
         .arrows
@@ -39,7 +39,7 @@ include ./header.pug
                       if articleVal.category_id == catVal._id
                           p.category-label= catVal.name
                     a(href= `/article/${articleVal.num}`)
-                      img.img-thumbnail(src=`./uploads/${articleVal.image}` alt='image')
+                      img.img-thumbnail(src=`${articleVal.image}` alt='image')
                       h5= `${articleVal.title.substring(0, 60)}...`
                         p= `${new Date(articleVal.date).getDate()}, ${new Date(articleVal.date).getMonth()+1}, ${new Date(articleVal.date).getFullYear()} `
                           span.fa.fa-clock
@@ -54,7 +54,7 @@ include ./header.pug
                       if articleVal.category_id == catVal._id
                         p.category-label= catVal.name
                     a(href= `/article/${articleVal.num}`)
-                      img.img-thumbnail(src=`./uploads/${articleVal.image}` alt='image')
+                      img.img-thumbnail(src=`${articleVal.image}` alt='image')
                       h5= `${articleVal.title.substring(0, 60)}...`
                         p= `${new Date(articleVal.date).getDate()}, ${new Date(articleVal.date).getMonth()+1}, ${new Date(articleVal.date).getFullYear()} `
                           span.fa.fa-clock
@@ -73,7 +73,7 @@ include ./header.pug
                           p.category-label= subcat.name
                       if articleVal.category_id == catVal._id
                         p.category-label= catVal.name
-                    img.img-thumbnail(src= `/uploads/${articleVal.image}` alt='image')
+                    img.img-thumbnail(src= `${articleVal.image}` alt='image')
                     h5= `${articleVal.title.substring(0, 60)}...`
                       p= `${new Date(articleVal.date).getDate()}, ${new Date(articleVal.date).getMonth()+1}, ${new Date(articleVal.date).getFullYear()} `
                         span.fa.fa-clock
@@ -98,7 +98,7 @@ include ./header.pug
                             p.category-label(style='left: 7px;top: 7px;')= subcat.name
                         if catVal._id == val.category_id
                           p.category-label(style='left: 7px;top: 7px;')= catVal.name
-                      img.img-fluid(src='/uploads/'+ val.image alt='image')
+                      img.img-fluid(src= val.image alt='image')
                       h5(style='width: 100%;left:0px;bottom:-10px;')= val.title
                         p= `${new Date(val.date).getDate()}, ${new Date(val.date).getMonth()+1}, ${new Date(val.date).getFullYear()} `
                           span.fa.fa-clock
@@ -115,7 +115,7 @@ include ./header.pug
                                   p.category-label(style='left: 7px;top: 7px;')= subcat.name
                               if catVal._id == val.category_id
                                 p.category-label(style='left: 7px;top: 7px;')= catVal.name
-                            img(src= '/uploads/'+ val.image alt='image')
+                            img(src= val.image alt='image')
                             h5(style='font-size: 15px; width: 100%;left:0px;bottom:-10px;')= `${val.title.substring(0, 60)}...`
 
                               p= `${new Date(val.date).getDate()}, ${new Date(val.date).getMonth()+1}, ${new Date(val.date).getFullYear()} `
@@ -133,7 +133,7 @@ include ./header.pug
                             p.category-label(style='left: 7px;top: 7px;')= subcat.name
                         if catVal._id == val.category_id
                           p.category-label(style='left: 7px;top: 7px;')= catVal.name
-                      img(src= '/uploads/'+ val.image alt='image')
+                      img(src= val.image alt='image')
                       h5(style='font-size: 15px; width: 100%;left:0px;bottom:-10px;')= `${val.title.substring(0, 60)}...`
                         p= `${new Date(val.date).getDate()}, ${new Date(val.date).getMonth()+1}, ${new Date(val.date).getFullYear()} `
                           span.fa.fa-clock
@@ -155,7 +155,7 @@ include ./header.pug
                           p.category-label(style='left: 15px;')= subcat.name
                       if catVal._id == val.category_id
                         p.category-label(style='left: 15px;')= catVal.name
-                    img(src= `/uploads/${val.image}` alt='image')
+                    img(src= `${val.image}` alt='image')
                     h5= `${val.title.substring(0, 60)}...`
                       p= `${new Date(val.date).getDate()}, ${new Date(val.date).getMonth()+1}, ${new Date(val.date).getFullYear()} `
                         span.fa.fa-clock
@@ -173,7 +173,7 @@ include ./header.pug
                   .col-lg-4
                     a(href= `article/${article.num}`)
                       .article.img-hover
-                        img(src= `/uploads/${article.image}` alt='image')
+                        img(src= `${article.image}` alt='image')
                         span.fa.fa-play-circle.play-icon
                         h5(style='font-size: 15px; width: 100%;left:0px;bottom:-10px;')= article.title
                           p= `${new Date(article.date).getDate()}, ${new Date(article.date).getMonth()+1}, ${new Date(article.date).getFullYear()} `
@@ -207,14 +207,14 @@ include ./header.pug
                         if n == 0
                           a(href= `/article/${article.num}`)
                             .article-normal.img-blur
-                              img(src= `/uploads/${article.image}` alt='image')
+                              img(src= `${article.image}` alt='image')
                               h5= `${article.title.substring(0, 60)}...`
                                 p= `${new Date(article.date).getDate()}, ${new Date(article.date).getMonth()+1}, ${new Date(article.date).getFullYear()} `
                                   span.fa.fa-clock
                         else 
                           a(href= `/article/${article.num}`)
                             .article-horizontal.img-blur
-                              img(src= `/uploads/${article.image}` alt='image')
+                              img(src= `${article.image}` alt='image')
                               h5= `${article.title.substring(0, 60)}...`
                                 p= `${new Date(article.date).getDate()}, ${new Date(article.date).getMonth()+1}, ${new Date(article.date).getFullYear()} `
                                   span.fa.fa-clock
