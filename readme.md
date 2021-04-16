@@ -146,13 +146,13 @@ npm install from CMD on the project directory path
 npm install
 ```  
 
-Change web push publicVapidKey, privateVapidKey and Email from index.js. Sample code:  
+<!-- Change web push publicVapidKey, privateVapidKey and Email from index.js. Sample code:  
 
 ```  
 const publicVapidKey = "<PublicKey>";  
 const privateVapidKey  = "<PrivateKey>;  
 webpush.setVapidDetails('mailto:<YourEmail>', publicVapidKey, privateVapidKey);
-```  
+```   -->
 #### deployment
 
 Use mongoDB as a cloud. Example: MongoDB Atlas  
@@ -175,7 +175,7 @@ router.use(session({
 }));
 ```
 
-Change Google recaptcha Secret key to your own at path /routes/home.js  
+<!-- Change Google recaptcha Secret key to your own at path /routes/home.js  
 
 ```
 const secretKey = '<SecretKey>';
@@ -184,7 +184,7 @@ Change email verifier module API key to your own at path /routes/newsletter.js, 
 
 ```
 let verifier = new Verifier("<YourKey>");
-```
+``` -->
 
 
 
