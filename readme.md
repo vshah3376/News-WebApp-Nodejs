@@ -153,7 +153,7 @@ const publicVapidKey = "<PublicKey>";
 const privateVapidKey  = "<PrivateKey>;  
 webpush.setVapidDetails('mailto:<YourEmail>', publicVapidKey, privateVapidKey);
 ```   -->
-#### deployment
+<!-- #### deployment
 
 Use mongoDB as a cloud. Example: MongoDB Atlas  
 Use a cloud server. Example: Heroku  
@@ -173,7 +173,7 @@ router.use(session({
         url: 'mongodb://127.0.0.1:27017/magazine',
     })
 }));
-```
+``` -->
 
 <!-- Change Google recaptcha Secret key to your own at path /routes/home.js  
 
