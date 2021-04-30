@@ -1,10 +1,11 @@
 # Magazine news Blog web app with Node.js and MongoDB
 
-This app is developed with Node.js and MongoDB.
+This app is developed with Node.js, Python and MongoDB.
 The web app is a blog CMS. Everything is dynamic. You don't need to edit any code manually.
 
 ### features:
 
+Self-implemented summarizer based on TextRank
 Posting articles  
 highlighted articles  
 Slideshow of  articles  
@@ -146,6 +147,7 @@ npm install from CMD on the project directory path
 npm install
 ```  
 
+Also check Python requirements in the summarizer folder for running the summarizer script.
 <!-- Change web push publicVapidKey, privateVapidKey and Email from index.js. Sample code:  
 
 ```  
