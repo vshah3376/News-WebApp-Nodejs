@@ -1,0 +1,35 @@
+include ./header
+
+.container
+   main
+    .row
+     .col-lg-10(style='text-align: center; margin:auto')
+
+      form(action=`/user/register/` method="POST" style='width:100% margin:auto;margin-top: 20px;text-align:center;')
+        h4(style='margin: 10px auto;') User Registration Form
+
+         .form-group
+          input.form-control(type='text' placeholder='Name' name='name' required )
+
+         .form-group
+          input.form-control(type='email' placeholder='EmailId' name='email' required)
+
+         .form-group
+          input.form-control(type='password' placeholder='Password' name='password' required)
+         .form-group
+          input.form-control(type='text' placeholder='Age' name='age' required )
+
+         .form-group
+          input.form-control(type='text' placeholder='Gender' name='gender' required)
+
+         .form-group
+          input.form-control(type='text' placeholder='Address' name='address' required)
+ 
+
+         if error
+          p= error
+         .form-group
+          input.form-control.btn.btn-primary(type="submit" value="Register" style='border: 1px solid silver;')
+
+
+//- script(type='text/javascript' src='/scripts/admin/script.js')
