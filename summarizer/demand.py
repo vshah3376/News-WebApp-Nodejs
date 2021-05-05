@@ -21,7 +21,7 @@ nltk.download('wordnet')
 nltk.download('punkt')
 nltk.download('stopwords')
 
-vec_path = 'glove/glove.6B.100d.txt'
+vec_path = 'glove/glove.6B.100d.txt' # Glove embeddings file, store in the given path
 embeddings_file = open(vec_path, 'r', encoding="utf8")
 embeddings = dict()
 
@@ -74,7 +74,7 @@ def cosine_similarity(s1, s2):
         pass
     return cos_sim
 
-def textrank_summarise(paragraph, no_of_sentences):
+def textrank_summarise(paragraph, no_of_sentences): # self-implemented summarization function based on TextRank
     
     sentences = sent_tokenize(paragraph) # no. of sentences
     cleaned_sentences=[]
@@ -106,10 +106,7 @@ def textrank_summarise(paragraph, no_of_sentences):
     # summary = summary.strip()
     # summary = re.sub(r'\n',' ',summary)
 
-    templis = []
-
-    for i in range(no_of_sentences):
-        templis.append(ranked_sentences[i][1])
+    templis = [y[1] for y in ranked_sentences[:no_of_sentences]]
     
     summary = '\n'.join(templis)
     summary = summary.strip()

@@ -27,7 +27,7 @@ nltk.download('wordnet')
 nltk.download('punkt')
 nltk.download('stopwords')
 
-vec_path = 'glove/glove.6B.100d.txt' # Glove embeddings file
+vec_path = 'glove/glove.6B.100d.txt' # Glove embeddings file, store in the given path
 embeddings_file = open(vec_path, 'r', encoding="utf8")
 print('CP1')
 embeddings = dict()
@@ -110,10 +110,7 @@ def textrank_summarise(paragraph, no_of_sentences): # self-implemented summariza
     # summary = summary.strip()
     # summary = re.sub(r'\n',' ',summary)
 
-    templis = []
-
-    for i in range(no_of_sentences):
-        templis.append(ranked_sentences[i][1])
+    templis = [y[1] for y in ranked_sentences[:no_of_sentences]]
     
     summary = '\n'.join(templis)
     summary = summary.strip()
