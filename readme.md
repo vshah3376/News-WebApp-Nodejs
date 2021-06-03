@@ -168,7 +168,7 @@ Also check Python requirements in the summarizer folder for running the summariz
 
 ------------------------------------------
 
-<h3 align="center"><b>Developed by <a href=" ">Nishi</a>,<a href="https://github.com/vshah3376"> Vatsal</a> and <a href="https://github.com/bhuvnesh7">Bhuvnesh.</a></b></h1>
+<h3 align="center"><b>Developed by <a href="https://github.com/nishigthb">Nishi</a>,<a href="https://github.com/vshah3376"> Vatsal</a> and <a href="https://github.com/bhuvnesh7">Bhuvnesh.</a></b></h1>
 
 <!-- Change web push publicVapidKey, privateVapidKey and Email from index.js. Sample code:  
 
