@@ -7,7 +7,7 @@
 
 We have developed a news summarization website that displays summaries of news articles. Our project aims to be a one stop website where visitors can browse news articles, receive recommendations, check categories and read summaries.. We aim to continue developing our application in the future and add other features and optimize them as well. <br> 
 
-A separate script get article links from NewsAPI, scrapes the article content, summarizes it and stores relevant content in mongoDB database which is then accessed by the website. There is also a script for on-demand summarization. <br>
+A separate script get article links from NewsAPI, scrapes the article content, summarizes it and stores relevant content in mongoDB database which is then accessed by the website. There is also a script for on-demand summarization. Available in the [Summarizer module](https://github.com/bhuvnesh7/News-WebApp-Summarizer). Scripts can also be found in the summarizer folder of this repo. <br>
 
 This web app is developed with Node.js, Python 3.8 and MongoDB.
 The web app is a blog CMS. Everything is dynamic. You don't need to edit any code manually.
