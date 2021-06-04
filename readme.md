@@ -171,6 +171,9 @@ npm install
 
 Also check Python requirements in the summarizer folder for running the summarizer script and on-demand summarization Flask API.
 
+### How to use the application:
+[User Guide](https://docs.google.com/document/d/1ZeWh1GbxrI-MK58yBUUnjPnIoVxtL4sxsJUSp7aOWIc/edit?usp=sharing)
+
 
 ------------------------------------------
 
