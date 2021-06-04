@@ -29,7 +29,6 @@ The web app is a blog CMS. Everything is dynamic. You don't need to edit any cod
 * About page  
 * REST API for fetching the articles  
 * Push Notification for visitors  
-* Fully managed Admin Panel (Add, Edit and Delete everything from Database)  
 * Advanced Admin Panel dashboard  
 
 <!-- ## Project directory structure
@@ -152,11 +151,18 @@ admin Password: demo
 
 Jupyter Notebook contains algorithm implementation and comparison with Gensim's summarizer. Comparable performance is achieved. 
 
-
+### Tech Stack
+* Frontend-HTML,CSS,JavaScript
+* Backend-Node.js,Express,Python
+* Database-Mongodb
+* API-https://newsapi.org/
+* News Summarization-Algorithm based on TextRank  
 
 ### Prerequisites and Installing
 
-install all modules from the package.json file by typing:  
+1.Nodes.js installer-
+https://nodejs.org/en/download/  <br>
+2.Install all modules from the package.json file by typing:  
 npm install from CMD on the project directory path
 
 ```  
